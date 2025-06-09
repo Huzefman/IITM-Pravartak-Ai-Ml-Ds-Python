@@ -15,6 +15,8 @@ import seaborn as sns
 cars_data=pd.read_csv('../../DataSets/Toyota.csv',index_col=0)
 cars_data1=cars_data.copy()
 cars_data1.dropna(axis=0,inplace=True)
+cars_data1.info()
+
 
 #Scatter Plot
 sns.set(style="darkgrid")
