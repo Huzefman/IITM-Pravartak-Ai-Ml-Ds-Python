@@ -8,7 +8,7 @@ Created on Sun Jun  8 12:05:46 2025
 
 import pandas as pd
 
-tips_data=pd.read_csv('Tips.csv',index_col=0)
+tips_data=pd.read_csv('../../DataSets/Tips.csv',index_col=0)
 tips_data1=tips_data.copy()
 
 #To get Numerical data from give dataset

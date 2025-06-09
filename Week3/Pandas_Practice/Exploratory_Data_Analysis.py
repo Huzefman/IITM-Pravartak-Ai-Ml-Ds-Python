@@ -8,7 +8,7 @@ Created on Sun Jun  8 10:13:16 2025
 
 import pandas as pd
 
-cars_data=pd.read_csv('Toyota.csv',index_col=0,na_values=['????','??'])
+cars_data=pd.read_csv('../../DataSets/Toyota.csv',index_col=0,na_values=['????','??'])
 cars_data1=cars_data.copy()
 
 print("Creating a simple frequency table corsstabulation")

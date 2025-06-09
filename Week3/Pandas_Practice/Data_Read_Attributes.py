@@ -10,21 +10,21 @@ import pandas as pd
 
 print("This is demo for reading data from csv")
 
-data_csv1=pd.read_csv('Iris_data_sample.csv')
-data_csv2=pd.read_csv('Iris_data_sample.csv',index_col=0)
-data_csv3=pd.read_csv('Iris_data_sample.csv',index_col=0,na_values=["??","###"])
+data_csv1=pd.read_csv('../../DataSets/Iris_data_sample.csv')
+data_csv2=pd.read_csv('../../DataSets/Iris_data_sample.csv',index_col=0)
+data_csv3=pd.read_csv('../../DataSets/Iris_data_sample.csv',index_col=0,na_values=["??","###"])
 
 print("This is demo for reading data from excel")
 
-data_xslv1=pd.read_excel('Iris_data_sample.xlsx')
-data_xslv2=pd.read_excel('Iris_data_sample.xlsx',index_col=0)
-data_xslv3=pd.read_excel('Iris_data_sample.xlsx',index_col=0,na_values=["??","###"])
+data_xslv1=pd.read_excel('../../DataSets/Iris_data_sample.xlsx')
+data_xslv2=pd.read_excel('../../DataSets/Iris_data_sample.xlsx',index_col=0)
+data_xslv3=pd.read_excel('../../DataSets/Iris_data_sample.xlsx',index_col=0,na_values=["??","###"])
 
 print("This is demo for reading data from txt")
 
-data_txt1=pd.read_table('Iris_data_sample.txt')
-data_txt2=pd.read_table('Iris_data_sample.txt',index_col=0, sep=' ')
-data_txt3=pd.read_csv('Iris_data_sample.txt',index_col=0, sep=' ')
+data_txt1=pd.read_table('../../DataSets/Iris_data_sample.txt')
+data_txt2=pd.read_table('../../DataSets/Iris_data_sample.txt',index_col=0, sep=' ')
+data_txt3=pd.read_csv('../../DataSets/Iris_data_sample.txt',index_col=0, sep=' ')
 
 print("This is demo for shallow copy")
 
