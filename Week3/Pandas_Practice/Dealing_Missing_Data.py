@@ -14,9 +14,7 @@ cars_data1=cars_data.copy()
 print("Getting no of missing values in each column")
 print(cars_data1.isna().sum())
 
-print("Getting the rows which have atleast one column value missing")
 
-missing=cars_data1[cars_data1.isnull().any(axis=1)]
 
 print("Getting information stats about give Data")
 description=cars_data1.describe()
