@@ -11,7 +11,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #importing the data
-cars_data=pd.read_csv('../../DataSets/Toyota.csv')
+cars_data=pd.read_csv('../Datasets/Toyota.csv')
 cars_data1=cars_data.copy()
 
 #removing all the nan values

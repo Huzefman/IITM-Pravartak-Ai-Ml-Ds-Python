@@ -8,7 +8,7 @@ Created on Sun Jun  8 10:59:38 2025
 
 import pandas as pd
 
-cars_data=pd.read_csv('../../DataSets/Toyota.csv',index_col=0,na_values=['??','????'])
+cars_data=pd.read_csv('../Datasets/Toyota.csv',index_col=0,na_values=['??','????'])
 cars_data1=cars_data.copy()
 
 print("Getting no of missing values in each column")

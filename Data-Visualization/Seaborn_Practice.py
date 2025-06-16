@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 #importing data
-cars_data=pd.read_csv('../../DataSets/Toyota.csv',index_col=0)
+cars_data=pd.read_csv('../Datasets/Toyota.csv',index_col=0)
 cars_data1=cars_data.copy()
 cars_data1.dropna(axis=0,inplace=True)
 cars_data1.info()

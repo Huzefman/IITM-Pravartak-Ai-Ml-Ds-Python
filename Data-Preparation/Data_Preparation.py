@@ -13,12 +13,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 #Changing Working Directory
-os.chdir('/Users/huzefa/IITM-Pravartak-Ai-Ml-Ds-Python/Week4/Data_Preparation')
+os.chdir('/Users/huzefa/IITM-Pravartak-Ai-Ml-Ds-Python/Data-Preparation')
 
 #Importing all the necessasry datasets
-acDetails=pd.read_table('../../DataSets/acDetails.txt',index_col=0,sep='\t')
-demoDetails=pd.read_csv('../../DataSets/demoDetails.csv',index_col=0)
-serviceDetails=pd.read_csv('../../DataSets/serviceDetails.csv',index_col=0)
+acDetails=pd.read_table('../Datasets/acDetails.txt',index_col=0,sep='\t')
+demoDetails=pd.read_csv('../Datasets/demoDetails.csv',index_col=0)
+serviceDetails=pd.read_csv('../Datasets/serviceDetails.csv',index_col=0)
 
 #Checking if determined common attribute is actually common and consistent across all the dataframes
 acDetails.customerID.equals(demoDetails.customerID)
