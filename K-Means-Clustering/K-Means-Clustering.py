@@ -104,18 +104,18 @@ print(c_df)
 
 #Using obtained instights about clusters, it can be infered that the clusters may belong to following practical categories
 '''
-Cluster1 is distinguised by comparatively very high values for Brakes,
-IdlingTime, Honking, low MaxSpeed and TripLength
-This is indicative of intercity travel during peak hours
+Cluster1 is indicative of city trips during non-peak hours
 
 MaxSpeed, MostFreqSpeed and TripDuration is higher for cluster2 than cluster
 1 and 3
 Cluster2 is is indicative of highway trips
 
-Cluster3 is indicative of city trips during non-peak hours
+Cluster3 is distinguised by comparatively very high values for Brakes,
+IdlingTime, Honking, low MaxSpeed and TripLength
+This is indicative of intercity travel during peak hours
 ''' 
 #Assigning the names to clusters
-triptype = ['Intercity-Peak hours','Highway','Intercity-Non-peak hours']
+triptype = ['Intercity-Non-peak hours','Highway','Intercity-Peak hours']
 data['labels'] = labels
 data['labels'] = data['labels'].map({0:triptype[0],1:triptype[1],2:triptype[2]})
 print(data.head())
